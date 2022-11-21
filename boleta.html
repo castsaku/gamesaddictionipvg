@@ -6,31 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boleta</title>
     <link rel="stylesheet" href="css/boleta.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.css">
-</head>
-<body class="bg-dark">
-    <div class="container-fluid"> 
-            <form class="mx-1 position-absolute top-50 start-50 translate-middle bg-secondary px-4 py-2">
-                <p>Nombre empresa:</p>
-                <input type="text">
-                <p>Rut empresa:</p>
-                <input type="text" maxlength="9">
-                <p>Cantidad de productos:</p>
-                <input type="number">
-                <p>Valor Productos:</p>
-                <input type="text" pattern="[0-9]{$}">
-                <p>Emisión:</p>
-                <input type="date">
-                <br>
-                <button type="button" class="btn btn-dark mt-3">Crear Boleta</button>
-            </form>     
+    </head>
+<body>
+    
+    <div class="box"> 
+            <div class="form">
+                <form   class="form">
+                    <h2>Datos de Compra</h2>
+                <div class="inputBox">
+                    <input type="text" id="nombre" required="required">
+                    <span>Nombre empresa:</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="rut"required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido">
+                    <span>Rut empresa:</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="cantidad" required="required">
+                    <span>Cantidad de productos:</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="text" id="valor" required="required">
+                    <span>Valor Productos:</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    
+                    <input type="text" id="date" >
+                    <span>Emisión:</span>
+                    <i></i>
+                </div>
+                    <input type="submit" value="Crear Boleta">
+                </form>
+                
+            </div>     
     </div>
-
-
-
-
-
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/boleta.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebars.js"></script>
 </body>
 </html>
