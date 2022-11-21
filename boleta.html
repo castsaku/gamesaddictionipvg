@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boleta</title>
-    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="css/boleta.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.css">
 </head>
 <body class="bg-dark">
-    <div class="container-fluid m-1">
-        <!--
-        <p class="text-primary mt-1">Nombre:</p>
-        <input type="text">
-        <p class="text-primary mt-1">Rut:</p>
-        <input type="text" maxlength="9">
-        -->
+    <div class="container-fluid"> 
+            <form class="mx-1 position-absolute top-50 start-50 translate-middle bg-secondary px-4 py-2">
+                <p>Nombre empresa:</p>
+                <input type="text">
+                <p>Rut empresa:</p>
+                <input type="text" maxlength="9">
+                <p>Cantidad de productos:</p>
+                <input type="number">
+                <p>Valor Productos:</p>
+                <input type="text" pattern="[0-9]{$}">
+                <p>Emisión:</p>
+                <input type="date">
+                <br>
+                <button type="button" class="btn btn-dark mt-3">Crear Boleta</button>
+            </form>     
     </div>
+
 
 
 
