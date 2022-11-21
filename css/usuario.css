@@ -1,5 +1,5 @@
 body{
-    background-image: url("/images/galogo.png");
+    background-image: url("../images/galogo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
