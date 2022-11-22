@@ -2,14 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boleta</title>
     <link rel="stylesheet" href="css/boleta.css">
+    <link href="bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
     </head>
-<body>
-    
-    <div class="box"> 
+    <body>
+        <main>
+          <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <span class="fs-4 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">Games Addiction Soft Ver. 0.2 #Chimera</span>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="usuario.html" class="nav-link text-white" aria-current="page">
+                Bienvenido
+                </a>
+              </li>
+              <li>
+                <a href="boleta.html" class="nav-link active">
+                Crear Boleta
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                Historial de Transacciones
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                Inventario
+                </a>
+              </li>
+            </ul>
+            <hr>
+              <div class="dropdown">
+                <strong> <a>Cerrar Sesión</a></strong>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+              </div>
+          </div>
+      
+          <div class="b-example-divider"></div>
+
+<div class="body-boleta flex-fill">
+          <div class="box"> 
             <div class="form">
                 <form   class="form">
                     <h2>Datos de Compra</h2>
@@ -41,11 +79,14 @@
                 </div>
                     <input type="submit" value="Crear Boleta">
                 </form>
-                
             </div>     
     </div>
+</div>
     <script src="js/boleta.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/sidebars.js"></script>
-</body>
+        </main>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/sidebars.js"></script>
+      </body>
 </html>
