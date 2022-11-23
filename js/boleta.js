@@ -1,6 +1,6 @@
 const dateInput = document.getElementById('date');
 
-// ✅ Using the visitor's timezone
+
 dateInput.value = formatDate();
 
 console.log(formatDate());
@@ -11,8 +11,18 @@ function padTo2Digits(num) {
 
 function formatDate(date = new Date()) {
     return [
-    date.getFullYear(),
-    padTo2Digits(date.getMonth() + 1),
     padTo2Digits(date.getDate()),
+    padTo2Digits(date.getMonth() + 1),
+    date.getFullYear(),
     ].join('-');
+}
+function control() {
+
+    if (document.getElementById('uname') == null || document.getElementById('uname')=="") {
+        alert("El campo no puede estar vacío.");
+        document.getElementById('uname').focus();
+        return false;
+    }
+
+    return true;
 }
