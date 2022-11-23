@@ -16,13 +16,37 @@ function formatDate(date = new Date()) {
     date.getFullYear(),
     ].join('-');
 }
-function control() {
 
-    if (document.getElementById('uname') == null || document.getElementById('uname')=="") {
-        alert("El campo no puede estar vacío.");
-        document.getElementById('uname').focus();
+// Devuelve true si la tecla pulsada es un número o la tecla de retroceso, y false en caso contrario.
+function validarTeclaValor(evt){
+    //El codigo valida que tecla presiona el usuario
+    var code = (evt.wich) ? evt.wich : evt.keyCode;
+
+    if (code == 8){
+        return true;
+    } else if(code == 36){
+        return true;
+    } else if (code >= 48 && code <= 57){
+        return true;
+    } else{
         return false;
     }
-
-    return true;
 }
+function validarTeclaCantidad(evt){
+    var code = (evt.wich) ? evt.wich : evt.keyCode;
+
+    if (code == 8){
+        return true;
+    } else if (code >= 48 && code <= 57){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+// Modificación de atributos del formulario
+date.readOnly = true;
+rut.required = true;
+nombre.required = true;
+cantidad.required = true;
+valor.required = true;

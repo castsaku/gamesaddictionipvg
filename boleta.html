@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boleta</title>
-    <link rel="stylesheet" href="css/boleta.css">
-    <link href="bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
-    <link href="css/sidebar.css" rel="stylesheet">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Boleta</title>
+      <link rel="stylesheet" href="css/boleta.css">
+      <link href="bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
+      <link href="css/sidebar.css" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -25,13 +25,14 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
-                Historial de Transacciones
+                <a href="inventario.html" class="nav-link active">
+                Inventario
                 </a>
+                
               </li>
               <li>
                 <a href="#" class="nav-link text-white">
-                Inventario
+                Historial de Transacciones
                 </a>
               </li>
             </ul>
@@ -43,38 +44,35 @@
                 </ul>
               </div>
           </div>
-      
           <div class="b-example-divider"></div>
-
           <div class="body-boleta flex-fill">
             <div class="box"> 
                 <div class="form">
                   <form   class="form">
                       <h2>Datos de Compra</h2>
                   <div class="inputBox">
-                      <input type="text" id="nombre" required="required">
+                      <input type="text" id="nombre" >
                       <span>Nombre empresa:</span>
                       <i></i>
                   </div>
                   <div class="inputBox">
-                      <input type="text" id="rut" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido">
+                      <input type="text" id="rut" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido">
                       <span>Rut empresa: Formato Ej:12345678-9</span>
                       <i></i>
                   </div>
                   <div class="inputBox">
-                      <input type="text" id="cantidad" required="required">
+                      <input type="text" id="cantidad" onkeypress="return validarTeclaCantidad(event);">
                       <span>Cantidad de productos:</span>
                       <i></i>
                   </div>
                   <div class="inputBox">
-                      <input type="text" id="valor" required="required">
+                      <input type="text" id="valor" onkeypress="return validarTeclaValor(event);">
                       <span>Valor Productos:</span>
                       <i></i>
                   </div>
-                  <div class="inputBox">
-                      
+                  <div class="inputBoxDate">
                       <input type="text" id="date" >
-                      <span>Emisión:</span>
+                      <span></span>
                       <i></i>
                   </div>
                       <input type="submit" value="Crear Boleta">
