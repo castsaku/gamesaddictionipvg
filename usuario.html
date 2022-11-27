@@ -9,9 +9,27 @@
     <link href="css/usuario.css" rel="stylesheet">
   </head>
 
+  <nav class="d-md-none navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Games Addiction</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="usuario.html">Bienvenido</a>
+          <a class="nav-link" href="boleta.html">Crear Boleta</a>
+          <a class="nav-link" href="inventario.html">Inventario</a>
+          <a class="nav-link" href="index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
 <body>
   <main>
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+
+    <div class="d-md-flex d-none flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
       <span class="fs-4 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">Games Addiction Soft Ver. 0.2 #Chimera</span>
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
@@ -40,7 +58,11 @@
         </div>
     </div>
 
-    <div class="b-example-divider"></div>
+
+
+
+
+    <div class="d-md-flex d-none b-example-divider"></div>
   </main>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/sidebars.js"></script>
