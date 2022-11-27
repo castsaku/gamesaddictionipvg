@@ -13,15 +13,15 @@ function login(){
 
     }
     else if (Usuario == ''){
-        alert("Ingrese el usuario, por favor");
+        alert("Ingrese su usuario");
         return(false);
     }
     else if(password == ''){
-        alert("Ingrese la contraseña, por favor");
+        alert("Ingrese su contraseña");
         return(false);
     }
     else {
-        alert("NO TIENE PERMISO");
+        alert("Credenciales incorrectas. Vuelva a intentarlo.");
         return(false);
     }
 }
