@@ -9,25 +9,27 @@
 </head>
 <body>
     <div class="box">
-        <div class="form">
+        <div class="form" >
+            <form method="GET" id="form1" name="form1">
             <h2>Iniciar Sesión</h2>
             <div class="inputBox">
-                <input type="text" required="required">
+                <input type="text" id="Usuario" name="usuario" >
                 <span>Usuario</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" required="required">
+                <input type="password" id="password" name="password" >
                 <span>Contrase&ntilde;a</span>
                 <i></i>
             </div>
             <div class="links">
                 <a href="#">¿Olvidaste tu contrase&ntilde;a?</a>
             </div>
-            <form action="usuario.html">
-                <input type="submit" value="Iniciar Sesión">
+            
+                <input type="submit" value="Iniciar Sesión" onclick="login();">
             </form>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
