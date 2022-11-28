@@ -38,7 +38,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="boleta.html" class="nav-link active ">
+                <a href="boleta.html" class="nav-link active">
                 Crear Boleta
                 </a>
               </li>
@@ -62,33 +62,18 @@
             <div class="box"> 
                 <div class="form">
                   <form   class="form">
-                      <h2>Datos de Compra</h2>
-                  <div class="inputBox">
-                      <input type="text" id="nombre" >
-                      <span>Nombre empresa:</span>
-                      <i></i>
-                  </div>
-                  <div class="inputBox">
-                      <input type="text" id="rut" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido">
-                      <span>Rut empresa: Formato Ej:12345678-9</span>
-                      <i></i>
-                  </div>
-                  <div class="inputBox">
-                      <input type="text" id="cantidad" onkeypress="return validarTeclaCantidad(event);">
-                      <span>Cantidad de productos:</span>
-                      <i></i>
-                  </div>
+                      <h2>Boleta SII</h2>
+
                   <div class="inputBox">
                       <input type="text" id="valor" onkeypress="return validarTeclaValor(event);">
-                      <span>Valor Productos:</span>
+                      <span>Total</span>
                       <i></i>
                   </div>
                   <div class="inputBoxDate">
                       <input type="text" id="date" >
-                      <span></span>
                       <i></i>
                   </div>
-                      <input type="submit" value="Crear Boleta">
+                      <input class="whitebutton" type="submit" value="Crear Boleta" >
                   </form>
                 </div>     
             </div>

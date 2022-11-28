@@ -12,7 +12,7 @@ body{
 .box{
     position:relative;
     width: 400px;
-    height: 680px;
+    height: 400px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -27,7 +27,7 @@ body{
     flex-direction: column;
 }
 .form h2{
-    color: #ffff00;
+    color: white;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -66,7 +66,7 @@ body{
 
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
-    color: #ffff00;
+    color: white;
     transform: translateX(0px) translateY(-34px);
     font-size: 0.75em;
 }
@@ -76,7 +76,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background:#ffff00;
+    background:white;
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -116,7 +116,7 @@ body{
 }
 .inputBoxDate input:valid ~ span,
 .inputBoxDate input:focus ~ span{
-    color: #ffff00;
+    color: white;
     transform: translateX(0px) translateY(-34px);
     font-size: 0.75em;
 }
@@ -126,7 +126,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background:#ffff00;
+    background:white;
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -140,7 +140,7 @@ body{
 input[type="submit"]{
     border: none;
     outline: none;
-    background: #ffff00;
+    background:#0d6efd;
     padding: 11px 25px;
     width: 140px;
     margin-top: 10px;
@@ -150,4 +150,8 @@ input[type="submit"]{
 }
 input[type="submit"]:active{
     opacity: 0.8;
+}
+
+.whitebutton{
+    color: white;;
 }
