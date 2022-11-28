@@ -65,7 +65,7 @@ body{
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
-    color: #ffff00;
+    color: #fff;
     transform: translateX(0px) translateY(-34px);
     font-size: 0.75em;
 }
@@ -75,7 +75,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background:#ffff00;
+    background:#fff;
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -97,7 +97,7 @@ body{
 }
 .links a:hover,
 .links a:nth-child(2){
-    color: #ffff00;
+    color: #fff;
 }
 input[type="submit"]{
     border: none;
